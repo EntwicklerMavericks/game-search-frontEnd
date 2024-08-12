@@ -1,0 +1,57 @@
+$primary: #1F1D2B;
+$primary-clean: #452F60;
+$secondary: #646aea;
+$secondary-clean: #5B67DA;
+$secondary-dark: #7309bf;
+$tertiary: #4ADAFF;
+$tertiary-dark: #00A060;
+$tertiary-light: #4AE9A9;
+$tertiary-clean: #4BEAB0;
+$quarternary: #8B79F7;
+$quarternary-clean: #816EF5;
+$quarternary-dark: #5e09bf3e;
+$clean: #ffffff;
+$gray: rgb(189, 189, 189);
+$gray-dark: #707070;
+$purple-clean: #646AEA;
+$destructive: #ef4444;
+$warning: #ccc318;
+$black: #272726;
+$black-dark: #201D2B;
+
+$gs-colors: (
+  primary: $primary,
+  primary-clean: $primary-clean,
+  secondary: $secondary,
+  secondary-clean: $secondary-clean,
+  secondary-dark: $secondary-dark,
+  tertiary: $tertiary,
+  tertiary-dark: $tertiary-dark,
+  tertiary-light: $tertiary-light,
+  tertiary-clean: $tertiary-clean,
+  quarternary: $quarternary,
+  quarternary-clean: $quarternary-clean,
+  quarternary-dark: $quarternary-dark,
+  clean: $clean,
+  destructive: $destructive,
+  warning: $warning,
+  black: $black,
+  black-dark: $black-dark,
+  gray: $gray,
+  gray-dark: $gray-dark,
+  purple-clean: $purple-clean,
+);
+
+@each $name, $value in $gs-colors {
+  .gs-color#{"-" + $name} {
+    color: $value;
+  }
+
+  .gs-bg-color#{"-" + $name} {
+    background-color: $value;
+  }
+
+  .gs-border-color#{"-" + $name} {
+    border-color: $value !important;
+  }
+}

@@ -1,0 +1,54 @@
+$total-size: 500;
+$sizes: (
+  "": 0px,
+  "-md": 768px,
+);
+$sufixs: (
+  "px": "",
+  "%": "-perc",
+);
+@each $size, $sizevalue in $sizes {
+  @for $i from 0 through $total-size {
+    @each $sufix, $sufixvalue in $sufixs {
+      @media (min-width: $sizevalue) {
+        .gs-h#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          height: #{$i}#{$sufix};
+        }
+        .gs-lh#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          line-height: #{$i}#{$sufix};
+        }
+        .gs-max-h#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          max-height: #{$i}#{$sufix};
+        }
+        .gs-min-h#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          min-height: #{$i}#{$sufix};
+        }
+        .gs-w#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          width: #{$i}#{$sufix};
+        }
+        .gs-wper#{"-perc" + $size}-#{$i}#{"-perc" + $sufixvalue} {
+          width: #{$i}#{$sufix};
+        }
+        .gs-fs#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          font-size: #{$i}#{$sufix};
+          line-height: #{$i}#{$sufix};
+        }
+        .gs-top#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          top: #{$i}#{$sufix};
+        }
+        .gs-right#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          right: #{$i}#{$sufix};
+        }
+        .gs-left#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          left: #{$i}#{$sufix};
+        }
+        .gs-bottom#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          bottom: #{$i}#{$sufix};
+        }
+        .gs-border-radius#{"" + $size}-#{$i}#{"" + $sufixvalue} {
+          border-radius: #{$i}#{$sufix};
+        }
+      }
+    }
+  }
+}

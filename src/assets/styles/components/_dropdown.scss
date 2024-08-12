@@ -1,0 +1,25 @@
+.gs-dropdown {
+  @extend .gs-bg-color-clean;
+  @extend .w-full;
+  @extend .gs-h-40;
+
+  border: 1px solid $clean; 
+  border-radius: 2px;
+  color: $black;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+  
+  li {
+    padding: 10px 5px;
+  }
+
+  span.p-dropdown-label {
+    padding: 6px;
+  }
+}

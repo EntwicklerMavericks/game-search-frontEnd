@@ -1,0 +1,79 @@
+html,
+body {
+  // background-color: $black;background: rgb(31,29,43);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 29, 43, 1) 18%,
+    rgba(31, 29, 43, 1) 55%,
+    rgba(115, 9, 191, 1) 200%
+  );
+  color: $clean;
+
+  .body-painel {
+    color: $black;
+  }
+
+  scrollbar-color: $primary $secondary;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+}
+
+.min-body {
+  // @media only screen and (max-width: 600px) {
+  //   body {
+  // min-height: calc(100vh - 250px);
+  //   }
+  // }
+  // @media only screen and (min-width: 600px) {
+  //   body {
+  min-height: calc(100vh - 171px);
+  //   }
+  // }
+  // overflow: auto;
+}
+
+.min-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.hoverA:hover {
+  color: rgb(196, 196, 196);
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@keyframes neonPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #f0f, 0 0 15px #f0f, 0 0 20px #f0f, 0 0 25px #f0f, 0 0 30px #f0f, 0 0 35px #f0f;
+    transform: translateY(0);
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #f0f, 0 0 30px #f0f, 0 0 40px #f0f, 0 0 50px #f0f, 0 0 60px #f0f, 0 0 70px #f0f;
+    transform: translateY(-10px);
+  }
+}
+
+.pulse {
+  font-size: 2rem;
+  color: #fff;
+  animation: neonPulse 2s infinite;
+}

@@ -1,0 +1,64 @@
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-full-vh {
+  height: 100vh;
+}
+
+.top-divider {
+  border-top: 1px solid $primary;
+}
+
+.bottom-divider {
+  border-bottom: 1px solid $primary;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.scroll-infinity-x {
+  display: flex;
+  overflow-x: auto;
+
+  scrollbar-color: $primary $secondary;
+  scrollbar-width: thin;
+  ::-webkit-scrollbar {
+    width: 1em;
+  }
+}
+
+.gradient-primary {
+  background: linear-gradient(180deg, $primary 0%, $tertiary 100%);
+}
+
+.gradient-tertiary {
+  background: linear-gradient(90deg, $tertiary-dark 0%, $tertiary 100%);
+}
+
+.gradient-template {
+  background: linear-gradient(90deg, $primary 0%, $secondary-dark 100%);
+}
+
+.gradient-btn-tertiary {
+  background: transparent linear-gradient(224deg, #00CEFF 0%, #00FF0A 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+.gradient-btn-primary-clean {
+  background: transparent linear-gradient(284deg, #9377F8 0%, #4C64BE 100%) 0% 0% no-repeat padding-box;
+  border-radius: 46px;
+  opacity: 1;
+}
+
+.gradient-btn-primary{
+  background: transparent linear-gradient(224deg, #8F3BF1 0%, #FA5AF8 100%) 0% 0% no-repeat padding-box;
+  mix-blend-mode: normal;
+  opacity: 1;
+}

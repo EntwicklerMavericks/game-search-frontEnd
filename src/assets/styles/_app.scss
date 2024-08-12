@@ -1,0 +1,14 @@
+@import "./variables";
+
+@import "../fonts/Nunito-Family/fonts.scss";
+@import "../fonts/AlegreyaSans-Family/fonts.scss";
+@import "../fonts/Poppins-Family/fonts.scss";
+@import "../fonts/Open-24-Display-St-Family/fonts.scss";
+
+@import "./main";
+@import "./sizes";
+@import "./typography";
+@import "./utils";
+
+@import "./components/components";
+@import "primeicons/primeicons.css";
